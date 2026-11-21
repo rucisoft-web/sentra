@@ -1,0 +1,12 @@
+# SENTRA — fallback jika document root subdomain TIDAK diarahkan ke folder /public.
+# Disarankan: arahkan document root ke  <folder-aplikasi>/public  (lihat PANDUAN-CPANEL.md).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Tolak akses langsung ke file/folder sensitif
+    RewriteRule ^(\.env|\.git|composer\.(json|lock)|artisan|deploy|storage|vendor|database|app|config|bootstrap|routes|resources|tests)(/|$) - [F,L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

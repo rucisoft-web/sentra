@@ -10,6 +10,8 @@ Dibangun dengan **Laravel 13**, **PHP 8.3+**, dan **MySQL 8** (MariaDB 10.6+ jug
 
 ## 1. Instalasi cepat
 
+> **Hosting cPanel?** Ikuti [PANDUAN-CPANEL.md](PANDUAN-CPANEL.md) — tersedia paket zip siap pakai (sudah berisi vendor) dan skrip `deploy/install-cpanel.sh`.
+
 Kebutuhan: PHP ≥ 8.3 (ekstensi `pdo_mysql`, `mbstring`, `openssl`, `fileinfo`), Composer 2, dan MySQL 8.
 
 ```bash
