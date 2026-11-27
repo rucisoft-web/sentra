@@ -17,7 +17,7 @@
         @if($document->checked_out_by)<span class="badge bg-amber-100 text-amber-800">🔒 Check-out: {{ $document->checkedOutBy->name }}</span>@endif
         @if($document->isReviewOverdue())<span class="badge bg-orange-100 text-orange-800">Review overdue</span>@endif
     </div>
-    <h1 class="text-xl sm:text-2xl font-bold text-navy-700 leading-tight">{{ $document->title }}</h1>
+    <h1 class="text-xl sm:text-2xl font-bold text-marun-800 leading-tight">{{ $document->title }}</h1>
     <div class="text-sm text-slate-500 mt-1">{{ $document->category->name }} › {{ $document->type->name }} · {{ $document->entity->code }} · {{ $document->department->name }}</div>
 @endsection
 @section('actions')

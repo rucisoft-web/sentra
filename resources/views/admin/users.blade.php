@@ -2,7 +2,7 @@
 @section('title', 'Pengguna & Peran')
 @section('header')
     <div class="section-title">M13 · Administration</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Pengguna, Peran & Masa Berlaku Akses</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Pengguna, Peran & Masa Berlaku Akses</h1>
     <p class="text-sm text-slate-500">Administrator teknis mengelola akun tetapi <b>tidak otomatis</b> dapat membaca dokumen rahasia (AC-07). Akun auditor/tamu wajib bertanggal kedaluwarsa. Menonaktifkan akun langsung mencabut sesi.</p>
 @endsection
 @section('content')

@@ -2,7 +2,7 @@
 @section('title', $document->exists ? 'Ubah Metadata' : 'Daftarkan Dokumen')
 @section('header')
     <div class="section-title">{{ $document->exists ? 'Ubah metadata' : 'Pendaftaran dokumen baru' }}</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">{{ $document->exists ? $document->title : 'Daftarkan Dokumen' }}</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">{{ $document->exists ? $document->title : 'Daftarkan Dokumen' }}</h1>
     <p class="text-sm text-slate-500">File yang diunggah berstatus <b>Draft</b> dan tidak otomatis menjadi dokumen sah sebelum melalui review & pengesahan.</p>
 @endsection
 @section('content')

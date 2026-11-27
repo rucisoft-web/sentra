@@ -52,7 +52,7 @@
 <div class="stripe h-1.5 w-full fixed top-0 z-50"></div>
 
 {{-- Sidebar --}}
-<aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-72 bg-white border-r-2 border-navy-700 transform -translate-x-full lg:translate-x-0 transition-transform duration-200 flex flex-col pt-1.5">
+<aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-72 bg-bar border-r-2 border-navy-700 transform -translate-x-full lg:translate-x-0 transition-transform duration-200 flex flex-col pt-1.5">
     <div class="px-5 py-4 border-b-2 border-slate-200 flex items-center gap-3">
         <div class="w-10 h-10 rounded-md bg-navy-700 flex items-center justify-center border-b-4 border-gold-500">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v4H4zM5 8v12h14V8M10 12h4"/></svg>
@@ -92,7 +92,7 @@
 
 <div class="lg:pl-72 pt-1.5 min-h-screen flex flex-col">
     {{-- Topbar --}}
-    <header class="sticky top-1.5 z-20 bg-white/95 backdrop-blur border-b-2 border-slate-200">
+    <header class="sticky top-1.5 z-20 bg-bar/95 backdrop-blur border-b-2 border-slate-200">
         <div class="flex items-center gap-2 sm:gap-3 px-3 sm:px-6 h-16">
             <button onclick="toggleNav()" class="lg:hidden p-2 -ml-1 rounded-md border-2 border-slate-200 text-navy-700" aria-label="Buka menu">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -143,7 +143,7 @@
 
         @yield('content')
     </main>
-    <footer class="px-6 py-4 text-xs text-slate-400 border-t-2 border-slate-200 bg-white">
+    <footer class="px-6 py-4 text-xs text-slate-400 border-t-2 border-slate-200 bg-bar">
         SENTRA · Enterprise Document &amp; Governance System — Grand Pasundan Convention Hotel · Seluruh akses tercatat dalam audit trail.
     </footer>
 </div>

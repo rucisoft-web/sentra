@@ -2,7 +2,7 @@
 @section('title', 'Preview '.$document->code)
 @section('header')
     <div class="flex flex-wrap gap-1.5 mb-1"><span class="doc-code text-xs bg-navy-50 border border-navy-100 rounded px-2 py-0.5">{{ $document->code }}</span><span class="doc-code text-xs font-bold">{{ $version->label() }}</span><x-cls :doc="$document"/></div>
-    <h1 class="text-xl font-bold text-navy-700">{{ $document->title }}</h1>
+    <h1 class="text-xl font-bold text-marun-800">{{ $document->title }}</h1>
     <div class="doc-code text-[11px] text-slate-500 break-all">SHA-256 {{ $version->checksum }} — integritas diverifikasi saat dibuka</div>
 @endsection
 @section('actions')

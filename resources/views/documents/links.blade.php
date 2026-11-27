@@ -2,7 +2,7 @@
 @section('title', 'Tautan dokumen')
 @section('header')
     <div class="section-title">Tautan dari {{ \App\Models\DocumentLink::SYSTEMS[$system] }}</div>
-    <h1 class="text-xl font-bold text-navy-700 mt-1">Record <span class="doc-code">{{ $record }}</span></h1>
+    <h1 class="text-xl font-bold text-marun-800 mt-1">Record <span class="doc-code">{{ $record }}</span></h1>
     <p class="text-sm text-slate-500">Dokumen dibuka langsung dari SENTRA sesuai izin Anda — tanpa membuat salinan tidak terkendali.</p>
 @endsection
 @section('content')

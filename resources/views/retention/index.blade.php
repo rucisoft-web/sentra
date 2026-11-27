@@ -2,7 +2,7 @@
 @section('title', 'Retensi & Legal Hold')
 @section('header')
     <div class="section-title">M10 · Retention & Records</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Retensi, Legal Hold & Pemusnahan</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Retensi, Legal Hold & Pemusnahan</h1>
     <p class="text-sm text-slate-500">Legal hold mengesampingkan pemusnahan. Pemusnahan memerlukan persetujuan ganda (Legal → BOD/GM), verifikasi retensi, MFA, dan berita acara.</p>
 @endsection
 @section('content')

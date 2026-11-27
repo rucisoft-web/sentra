@@ -5,16 +5,16 @@
     <title>SENTRA · Enterprise Document & Governance System</title>
     <meta name="description" content="SENTRA — pusat arsip korporasi resmi: terstruktur, tersistem, tepat sasaran. Repository, workflow persetujuan, legal & compliance, retensi, audit trail.">
     <style>
-        .grid-paper{background-image:linear-gradient(#e5eaf1 1px,transparent 1px),linear-gradient(90deg,#e5eaf1 1px,transparent 1px);background-size:28px 28px}
+        .grid-paper{background-image:linear-gradient(#EFE6D4 1px,transparent 1px),linear-gradient(90deg,#EFE6D4 1px,transparent 1px);background-size:28px 28px}
         .tab-folder{position:relative}.tab-folder:before{content:"";position:absolute;top:-10px;left:16px;width:70px;height:12px;border:1.5px solid currentColor;border-bottom:0;border-radius:6px 6px 0 0;background:inherit}
         html{scroll-behavior:smooth}
     </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased">
+<body class="bg-paper text-slate-800 font-sans antialiased">
 <div class="stripe h-1.5"></div>
 
 {{-- NAV --}}
-<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b-2 border-navy-700">
+<header class="sticky top-0 z-40 bg-bar/95 backdrop-blur border-b-2 border-navy-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center gap-4">
         <a href="#" class="flex items-center gap-2.5">
             <div class="w-9 h-9 rounded-md bg-navy-700 flex items-center justify-center border-b-4 border-gold-500">
@@ -44,7 +44,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
         <div>
             <div class="inline-flex items-center gap-2 bg-white border-2 border-gold-500 text-gold-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5">Terstruktur • Tersistem • Tepat Sasaran</div>
-            <h1 class="text-4xl sm:text-5xl font-bold text-navy-700 leading-[1.1]">Arsip korporasi yang <span class="relative whitespace-nowrap"><span class="relative z-10">otentik</span><span class="absolute left-0 right-0 bottom-1 h-3 bg-gold-100 -z-0"></span></span>, mudah ditemukan, dan terkendali.</h1>
+            <h1 class="text-4xl sm:text-5xl font-bold text-marun-800 leading-[1.1]">Arsip korporasi yang <span class="relative whitespace-nowrap"><span class="relative z-10">otentik</span><span class="absolute left-0 right-0 bottom-1 h-3 bg-gold-100 -z-0"></span></span>, mudah ditemukan, dan terkendali.</h1>
             <p class="mt-5 text-lg text-slate-600 max-w-xl"><b>SENTRA</b> adalah pusat arsip resmi perusahaan yang menyimpan, mengatur, menelusuri, menyetujui, melindungi dan mempertahankan dokumen sepanjang siklus hidupnya — sehingga setiap keputusan memiliki bukti, setiap kewajiban hukum terpantau, dan arsip tidak lagi bergantung pada individu.</p>
             <div class="mt-7 flex flex-wrap gap-3">
                 <a href="{{ route('login') }}" class="btn btn-primary !px-6 !py-3 !text-base">Coba demo Grand Pasundan</a>
@@ -59,7 +59,7 @@
         {{-- ilustrasi arsip digital --}}
         <div class="relative">
             <div class="absolute -top-3 -left-3 w-full h-full border-2 border-dashed border-gold-400 rounded-xl hidden sm:block"></div>
-            <div class="relative card !border-2 !border-navy-700 shadow-[8px_8px_0_#12355b] overflow-hidden">
+            <div class="relative card !border-2 !border-navy-700 shadow-[8px_8px_0_#006632] overflow-hidden">
                 <div class="bg-navy-700 text-white px-4 py-2.5 flex items-center gap-2 text-xs"><span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span><span class="w-2.5 h-2.5 rounded-full bg-gold-400"></span><span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span class="ml-2 doc-code opacity-80">sentra / repository / legal</span></div>
                 <div class="p-4 space-y-3 bg-paper">
                     @foreach([
@@ -88,7 +88,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mb-10">
             <div class="section-title mb-2">Masalah yang sering terjadi</div>
-            <h2 class="text-3xl font-bold text-navy-700">Arsip penting ada, tetapi tidak bisa diandalkan saat dibutuhkan.</h2>
+            <h2 class="text-3xl font-bold text-marun-800">Arsip penting ada, tetapi tidak bisa diandalkan saat dibutuhkan.</h2>
             <p class="text-slate-600 mt-3">Di hotel dan perusahaan jasa, dokumen tersebar di lemari, shared drive, email dan aplikasi chat. Akibatnya muncul masalah berulang yang mahal — terutama saat audit, pemeriksaan pemerintah, sengketa, atau pergantian karyawan.</p>
         </div>
         @php
@@ -120,7 +120,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mb-10">
             <div class="section-title mb-2">Apa penyebabnya?</div>
-            <h2 class="text-3xl font-bold text-navy-700">Bukan karena orangnya — karena tidak ada sistem yang mengikat.</h2>
+            <h2 class="text-3xl font-bold text-marun-800">Bukan karena orangnya — karena tidak ada sistem yang mengikat.</h2>
             <p class="text-slate-600 mt-3">Masalah arsip hampir selalu berakar pada enam penyebab yang saling berkaitan.</p>
         </div>
         @php
@@ -154,7 +154,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mb-10">
             <div class="section-title mb-2">Solusi SENTRA</div>
-            <h2 class="text-3xl font-bold text-navy-700">Satu sumber kebenaran untuk dokumen resmi, dengan prinsip 3T.</h2>
+            <h2 class="text-3xl font-bold text-marun-800">Satu sumber kebenaran untuk dokumen resmi, dengan prinsip 3T.</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-4 mb-12">
             @foreach([
@@ -249,7 +249,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10">
         <div>
             <div class="section-title mb-2">Keamanan & tata kelola</div>
-            <h2 class="text-3xl font-bold text-navy-700">Default deny. Least privilege. Semua tercatat.</h2>
+            <h2 class="text-3xl font-bold text-marun-800">Default deny. Least privilege. Semua tercatat.</h2>
             <p class="text-slate-600 mt-3">Keputusan izin = peran + unit organisasi + entitas hukum + klasifikasi + kepemilikan + status dokumen + masa berlaku akses. Otorisasi dilakukan di server untuk setiap lihat, cari, preview, unduh, API dan ekspor.</p>
             <ul class="mt-6 space-y-3 text-sm">
                 @foreach([
@@ -289,7 +289,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mb-8">
             <div class="section-title mb-2">Integrasi terkontrol</div>
-            <h2 class="text-3xl font-bold text-navy-700">Tautkan, jangan salin.</h2>
+            <h2 class="text-3xl font-bold text-marun-800">Tautkan, jangan salin.</h2>
             <p class="text-slate-600 mt-3">Dokumen dibuka dari sistem lain melalui deep link dan tetap melewati pemeriksaan izin pengguna — tanpa membuat salinan tidak terkendali.</p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -303,10 +303,10 @@
 {{-- CTA --}}
 <section class="py-16 sm:py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="card !border-2 !border-navy-700 shadow-[8px_8px_0_#c8962e] p-6 sm:p-10 grid md:grid-cols-3 gap-6 items-center">
+        <div class="card !border-2 !border-navy-700 shadow-[8px_8px_0_#B8862B] p-6 sm:p-10 grid md:grid-cols-3 gap-6 items-center">
             <div class="md:col-span-2">
                 <div class="section-title mb-2">Demo: Grand Pasundan Convention Hotel</div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-navy-700">Jelajahi SENTRA dengan data hotel yang realistis.</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-marun-800">Jelajahi SENTRA dengan data hotel yang realistis.</h2>
                 <p class="text-slate-600 mt-2">Perizinan yang akan berakhir, SOP dalam review, keputusan direksi dengan action item, legal hold, usulan pemusnahan, hingga audit trail — masuk sebagai GM, Legal, Document Controller, staf, auditor, atau admin IT untuk melihat perbedaan hak akses.</p>
             </div>
             <div class="flex flex-col gap-2">

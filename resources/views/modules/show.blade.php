@@ -2,7 +2,7 @@
 @section('title', $title)
 @section('header')
     <div class="section-title">Arsip modul</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">{{ $title }}</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">{{ $title }}</h1>
     @if($note)<p class="text-sm text-slate-500 max-w-3xl">{{ $note }}</p>@endif
 @endsection
 @section('content')

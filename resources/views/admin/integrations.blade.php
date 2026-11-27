@@ -2,7 +2,7 @@
 @section('title', 'Integrasi & API')
 @section('header')
     <div class="section-title">M13 · Integration</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Integrasi Sistem & API</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Integrasi Sistem & API</h1>
     <p class="text-sm text-slate-500">SENTRA melengkapi — bukan menggantikan — GPCH Asset Care, Ruci BSC, CRM GPCH dan VHP. Integrasi via tautan terkontrol & service account terbatas.</p>
 @endsection
 @section('content')

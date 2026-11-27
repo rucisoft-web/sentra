@@ -2,29 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tema Pasundan (Asset Care GPCH) diterapkan ke SENTRA */
+:root {
+  --k-hijau-gp:#006632; --k-hijau-muda:#2F8A57; --k-emas:#B8862B; --k-emas-muda:#D9B76A; --k-marun:#3A1410;
+  --k-kertas:#FAF6EC; --k-kertas-2:#F1EADB; --k-bar:#FFFDF8; --k-kartu:#FFFFFF;
+  --k-tinta:#2A1A14; --k-tinta-2:#6E5F52; --k-garis:#E7DDCB; --k-judul:#3A1410;
+  --bayang-kartu:0 8px 24px -20px rgba(42,26,20,.35);
+  --fokus:0 0 0 1px var(--k-hijau-gp), 0 0 0 3px rgba(184,134,43,.25);
+}
+
 @layer base {
   .grid > * { min-width: 0; }
+  body { color: var(--k-tinta); }
+  h1, h2, .judul { font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif; font-weight: 700; letter-spacing: .01em; color: var(--k-judul); }
+  h1 { line-height: 1.15; }
+  a { text-underline-offset: 3px; }
 }
 
 @layer components {
   [x-cloak]{display:none}
-  .doc-code{font-family:"IBM Plex Mono",monospace;letter-spacing:-.01em}
-  .card{background:#fff;border:1.5px solid #d5dbe4;border-radius:.6rem}
-  .card-accent{border-left-width:5px}
-  .btn{display:inline-flex;align-items:center;gap:.4rem;justify-content:center;border-radius:.45rem;padding:.5rem .9rem;font-weight:600;font-size:.875rem;border:1.5px solid transparent;transition:.15s;white-space:nowrap}
-  .btn-primary{background:#12355b;color:#fff;border-color:#12355b}.btn-primary:hover{background:#0d2744}
-  .btn-gold{background:#c8962e;color:#fff;border-color:#a67a1f}.btn-gold:hover{background:#a67a1f}
-  .btn-outline{background:#fff;color:#12355b;border-color:#12355b}.btn-outline:hover{background:#eef3f9}
-  .btn-danger{background:#fff;color:#be123c;border-color:#be123c}.btn-danger:hover{background:#fff1f2}
-  .btn-success{background:#047857;color:#fff;border-color:#047857}.btn-success:hover{background:#065f46}
-  .btn-sm{padding:.3rem .6rem;font-size:.78rem}
-  .input{width:100%;border:1.5px solid #c3ccd8;border-radius:.45rem;padding:.5rem .7rem;font-size:.9rem;background:#fff}
-  .input:focus{outline:none;border-color:#2d5a8c;box-shadow:0 0 0 3px #d6e2f0}
-  .label{display:block;font-size:.78rem;font-weight:600;color:#334155;margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.03em}
-  .badge{display:inline-flex;align-items:center;gap:.25rem;border-radius:999px;padding:.12rem .55rem;font-size:.72rem;font-weight:600;white-space:nowrap}
-  .tbl{width:100%;font-size:.875rem}.tbl th{background:#f1f4f8;text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#475569;padding:.6rem .75rem;border-bottom:2px solid #12355b}
-  .tbl td{padding:.6rem .75rem;border-bottom:1px solid #e5e9f0;vertical-align:top}.tbl tr:hover td{background:#fafbfd}
-  .section-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#12355b;display:flex;align-items:center;gap:.5rem}
-  .section-title:before{content:"";width:4px;height:1rem;background:#c8962e;border-radius:2px}
-  .stripe{background:repeating-linear-gradient(90deg,#12355b 0 40px,#c8962e 40px 60px,#0f766e 60px 100px)}
+  .doc-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.01em}
+
+  /* kartu dengan aksen hijau-emas di tepi atas */
+  .card{position:relative;background:var(--k-kartu);border:1px solid var(--k-garis);border-radius:.75rem;box-shadow:var(--bayang-kartu)}
+  .card::before{content:"";position:absolute;top:-1px;left:16px;right:16px;height:2px;border-radius:2px;pointer-events:none;
+    background:linear-gradient(90deg,var(--k-hijau-gp) 0 32px,transparent 32px 37px,var(--k-emas) 37px)}
+  .card-accent{border-left-width:4px}
+  .card-accent::before{display:none}
+
+  .btn{display:inline-flex;align-items:center;gap:.35rem;justify-content:center;min-height:2.25rem;border-radius:.45rem;padding:.45rem .85rem;font-weight:600;font-size:.82rem;border:1px solid var(--k-garis);color:var(--k-tinta);background:transparent;transition:.15s;white-space:nowrap}
+  .btn:hover{border-color:var(--k-hijau-gp);box-shadow:inset 0 -2px 0 var(--k-emas)}
+  .btn-primary{background:var(--k-hijau-gp);color:#fff;border-color:var(--k-hijau-gp);box-shadow:inset 0 -2px 0 var(--k-emas)}.btn-primary:hover{background:#004F27;border-color:#004F27}
+  .btn-gold{background:var(--k-emas);color:#fff;border-color:#96691C;box-shadow:inset 0 -2px 0 var(--k-marun)}.btn-gold:hover{background:#96691C}
+  .btn-outline{background:var(--k-kartu);color:var(--k-hijau-gp);border-color:var(--k-hijau-gp)}.btn-outline:hover{background:#EEF6F0}
+  .btn-danger{background:var(--k-kartu);color:#A8432A;border-color:#A8432A}.btn-danger:hover{background:#FBEFEB;box-shadow:inset 0 -2px 0 #A8432A}
+  .btn-success{background:#2F7A3F;color:#fff;border-color:#2F7A3F;box-shadow:inset 0 -2px 0 var(--k-emas)}.btn-success:hover{background:#24622F}
+  .btn-sm{padding:.25rem .6rem;font-size:.76rem;min-height:1.9rem}
+  .btn[disabled]{opacity:.45;cursor:not-allowed}
+
+  .input{width:100%;min-height:44px;border:1px solid var(--k-garis);border-radius:.45rem;padding:.5rem .75rem;font-size:.92rem;background:var(--k-kartu);color:var(--k-tinta)}
+  .input:focus{outline:none;box-shadow:var(--fokus)}
+  textarea.input{min-height:5rem}
+  .label{display:block;font-size:.7rem;font-weight:600;color:var(--k-tinta-2);margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.06em}
+  .badge{display:inline-flex;align-items:center;gap:.25rem;border-radius:999px;padding:.1rem .5rem;font-size:.72rem;font-weight:600;white-space:nowrap}
+
+  .tbl{width:100%;font-size:.82rem;border-collapse:collapse}
+  .tbl thead tr{box-shadow:inset 0 -1px 0 var(--k-emas)}
+  .tbl th{text-align:left;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--k-tinta-2);padding:.55rem .75rem;border-bottom:1px solid var(--k-emas)}
+  .tbl td{padding:.55rem .75rem;border-bottom:1px solid var(--k-garis);vertical-align:top}.tbl tr:hover td{background:rgba(184,134,43,.05)}
+
+  .section-title{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--k-marun);display:flex;align-items:center;gap:.5rem}
+  .section-title:before{content:"";width:18px;height:2px;background:linear-gradient(90deg,var(--k-hijau-gp) 0 10px,var(--k-emas) 10px);border-radius:2px}
+
+  /* pita tiga garis: emas 1px, hijau 2px, marun 1px (tinggi 6px) */
+  .stripe,.pita{height:6px;background:
+    linear-gradient(var(--k-emas),var(--k-emas)) 0 0/100% 1px no-repeat,
+    linear-gradient(var(--k-hijau-gp),var(--k-hijau-gp)) 0 2px/100% 2px no-repeat,
+    linear-gradient(var(--k-marun),var(--k-marun)) 0 5px/100% 1px no-repeat, var(--k-bar)}
+  .pita-warna{height:3px;background:linear-gradient(90deg,var(--k-hijau-gp) 33%,var(--k-emas) 33% 66%,var(--k-marun) 66%)}
+  .statistik{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-variant-numeric:tabular-nums}
 }

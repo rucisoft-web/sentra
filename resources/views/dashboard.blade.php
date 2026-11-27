@@ -2,7 +2,7 @@
 @section('title', 'Dashboard')
 @section('header')
     <div class="text-sm text-slate-500">{{ now()->translatedFormat('l, d F Y') }}</div>
-    <h1 class="text-2xl font-bold text-navy-700">Selamat datang, {{ auth()->user()->name }}</h1>
+    <h1 class="text-2xl font-bold text-marun-800">Selamat datang, {{ auth()->user()->name }}</h1>
     <div class="text-sm text-slate-500">{{ auth()->user()->position }} · {{ auth()->user()->department?->name }}</div>
 @endsection
 @section('actions')

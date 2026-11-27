@@ -2,7 +2,7 @@
 @section('title', 'Rapat & Keputusan')
 @section('header')
     <div class="section-title">M04 · Board & Management Records</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Rapat, Risalah & Keputusan</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Rapat, Risalah & Keputusan</h1>
     <p class="text-sm text-slate-500">Agenda, notulen, keputusan, action item, PIC, tenggat dan bukti tindak lanjut — dengan akses khusus.</p>
 @endsection
 @section('actions')<a href="{{ route('action-items.index') }}" class="btn btn-outline">Lihat semua action item</a>@endsection

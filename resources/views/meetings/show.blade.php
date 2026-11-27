@@ -2,7 +2,7 @@
 @section('title', $meeting->title)
 @section('header')
     <div class="flex flex-wrap gap-1.5 mb-1"><span class="badge bg-navy-50 text-navy-700 border border-navy-100">{{ \App\Models\Meeting::TYPES[$meeting->type] }}</span><x-cls :doc="null" :value="$meeting->classification"/><span class="doc-code text-xs">{{ $meeting->number }}</span></div>
-    <h1 class="text-2xl font-bold text-navy-700">{{ $meeting->title }}</h1>
+    <h1 class="text-2xl font-bold text-marun-800">{{ $meeting->title }}</h1>
     <div class="text-sm text-slate-500">{{ $meeting->meeting_at->translatedFormat('l, d F Y H:i') }} · {{ $meeting->location }}</div>
 @endsection
 @section('actions')

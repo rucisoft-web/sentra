@@ -2,7 +2,7 @@
 @section('title', 'Legal & Perizinan')
 @section('header')
     <div class="section-title">M02 · Legal & Compliance</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Register Legalitas, Perizinan & Kontrak</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Register Legalitas, Perizinan & Kontrak</h1>
     <p class="text-sm text-slate-500">Pengingat otomatis H-90 / H-60 / H-30 kepada pemilik, kepala departemen dan Legal. Bukti perpanjangan ditautkan sebagai relasi "perpanjangan dari".</p>
 @endsection
 @section('content')

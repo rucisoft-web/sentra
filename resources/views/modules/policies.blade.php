@@ -2,7 +2,7 @@
 @section('title', 'Kebijakan & SOP')
 @section('header')
     <div class="section-title">M03 · Policy, SOP & Organisasi</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Pusat Kebijakan, SOP & Struktur Organisasi</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Pusat Kebijakan, SOP & Struktur Organisasi</h1>
     <p class="text-sm text-slate-500">Hanya versi berlaku yang ditampilkan. Dokumen wajib baca memerlukan acknowledgement karyawan; review periodik dipantau.</p>
 @endsection
 @section('content')

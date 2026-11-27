@@ -2,7 +2,7 @@
 @section('title', 'Audit Trail')
 @section('header')
     <div class="section-title">M11 · Audit & Security</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Audit Trail</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Audit Trail</h1>
     <p class="text-sm text-slate-500">Log lihat/unduh/ubah/approve/ekspor bersifat append-only dan berantai hash SHA-256 (tamper-evident). Tidak dapat diubah atau dihapus melalui aplikasi.</p>
 @endsection
 @section('actions')

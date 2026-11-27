@@ -2,7 +2,7 @@
 @section('title', 'Master Data')
 @section('header')
     <div class="section-title">M13 · Master data & taksonomi</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Master Data</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Master Data</h1>
     <p class="text-sm text-slate-500">Entitas hukum, departemen, kategori, jenis dokumen, jadwal retensi dan mandat auditor.</p>
 @endsection
 @section('content')

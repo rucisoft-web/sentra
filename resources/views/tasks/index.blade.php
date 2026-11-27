@@ -2,7 +2,7 @@
 @section('title', 'Tugas Saya')
 @section('header')
     <div class="section-title">M07 · Workflow & e-approval</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Tugas Review & Persetujuan</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Tugas Review & Persetujuan</h1>
     <p class="text-sm text-slate-500">Pengesahan memerlukan MFA. Revisi/penolakan wajib disertai alasan; riwayat tidak hilang.</p>
 @endsection
 @section('content')

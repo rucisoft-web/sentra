@@ -2,7 +2,7 @@
 @section('title', 'Permintaan Akses')
 @section('header')
     <div class="section-title">Need-to-know access</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Permintaan Akses Dokumen</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Permintaan Akses Dokumen</h1>
     <p class="text-sm text-slate-500">Akses yang disetujui diberikan sebagai ACL berbatas waktu dan otomatis berakhir.</p>
 @endsection
 @section('content')

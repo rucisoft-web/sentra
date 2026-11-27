@@ -2,7 +2,7 @@
 @section('title', 'Pencarian')
 @section('header')
     <div class="section-title">M09 · Search & discovery</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Pencarian Arsip</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Pencarian Arsip</h1>
     <p class="text-sm text-slate-500">Full-text pada nomor, judul, deskripsi, tag, pihak terkait dan isi dokumen (indeks teks/OCR). Hasil hanya sesuai izin Anda.</p>
 @endsection
 @section('content')

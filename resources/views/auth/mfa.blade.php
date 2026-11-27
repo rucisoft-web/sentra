@@ -4,7 +4,7 @@
 <div class="max-w-md mx-auto">
     <div class="card card-accent border-l-gold-500 p-6">
         <div class="section-title mb-2">Verifikasi MFA (step-up)</div>
-        <h1 class="text-xl font-bold text-navy-700 mb-1">Masukkan kode autentikator</h1>
+        <h1 class="text-xl font-bold text-marun-800 mb-1">Masukkan kode autentikator</h1>
         <p class="text-sm text-slate-600 mb-4">Pengesahan dokumen, akses dokumen Sangat Rahasia, ekspor, pemusnahan dan administrasi memerlukan verifikasi ulang. Berlaku {{ config('archive.mfa_ttl_minutes') }} menit.</p>
         <form method="POST" action="{{ route('mfa.verify') }}" class="space-y-4">
             @csrf

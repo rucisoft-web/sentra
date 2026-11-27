@@ -12,7 +12,7 @@
             <div><div class="font-bold text-navy-700 text-xl tracking-wide">SENTRA</div><div class="text-xs text-slate-500">Enterprise Document &amp; Governance System</div></div>
         </a>
         <div class="card card-accent border-l-navy-700 p-6">
-            <h1 class="text-xl font-bold text-navy-700">Masuk ke Arsip Korporasi</h1>
+            <h1 class="text-xl font-bold text-marun-800">Masuk ke Arsip Korporasi</h1>
             <p class="text-sm text-slate-500 mt-1 mb-5">Grand Pasundan Convention Hotel</p>
             @if($errors->any())<div class="mb-4 text-sm bg-rose-50 border-l-4 border-rose-600 text-rose-800 px-3 py-2 rounded">{{ $errors->first() }}</div>@endif
             <form method="POST" action="{{ route('login') }}" class="space-y-4">

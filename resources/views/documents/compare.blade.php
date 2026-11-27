@@ -2,7 +2,7 @@
 @section('title', 'Bandingkan versi')
 @section('header')
     <div class="section-title">M08 · Compare metadata</div>
-    <h1 class="text-xl font-bold text-navy-700 mt-1">{{ $document->title }}</h1>
+    <h1 class="text-xl font-bold text-marun-800 mt-1">{{ $document->title }}</h1>
 @endsection
 @section('actions')<a href="{{ route('documents.show', $document) }}" class="btn btn-outline">← Detail</a>@endsection
 @section('content')

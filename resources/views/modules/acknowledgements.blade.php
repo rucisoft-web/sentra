@@ -2,7 +2,7 @@
 @section('title', 'Rekap acknowledgement')
 @section('header')
     <div class="section-title">Rekap acknowledgement · {{ $document->currentVersion?->label() }}</div>
-    <h1 class="text-xl font-bold text-navy-700 mt-1">{{ $document->title }}</h1>
+    <h1 class="text-xl font-bold text-marun-800 mt-1">{{ $document->title }}</h1>
     <p class="text-sm text-slate-500">{{ $acks->count() }} dari {{ $users->count() }} karyawan telah menyatakan membaca.</p>
 @endsection
 @section('actions')<a href="{{ route('documents.show', $document) }}" class="btn btn-outline">← Detail</a>@endsection

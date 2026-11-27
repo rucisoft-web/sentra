@@ -2,7 +2,7 @@
 @section('title', 'Repository')
 @section('header')
     <div class="section-title">M01 · Repository & Klasifikasi</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Repository Dokumen</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Repository Dokumen</h1>
     <p class="text-sm text-slate-500">Taksonomi perusahaan → departemen → kategori → jenis → tahun → nomor. Hanya menampilkan dokumen sesuai izin Anda.</p>
 @endsection
 @section('actions')

@@ -8,7 +8,7 @@
             <div><div class="section-title">Akses terbatas</div><div class="text-sm text-slate-500">Dokumen ditemukan, tetapi Anda belum memiliki izin membuka isinya.</div></div>
         </div>
         <div class="flex flex-wrap gap-1.5 mb-2"><span class="doc-code text-xs bg-navy-50 border border-navy-100 rounded px-2 py-0.5">{{ $document->code }}</span><x-cls :doc="$document"/><x-status :doc="$document"/></div>
-        <h1 class="text-xl font-bold text-navy-700">{{ $document->title }}</h1>
+        <h1 class="text-xl font-bold text-marun-800">{{ $document->title }}</h1>
         <div class="text-sm text-slate-500 mb-4">{{ $document->type->name }} · {{ $document->department->name }} · Pemilik: {{ $document->owner->name }}</div>
         <div class="bg-amber-50 border-l-4 border-amber-500 rounded p-3 text-sm mb-5">{{ $reason }}</div>
 

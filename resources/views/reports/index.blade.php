@@ -2,7 +2,7 @@
 @section('title', 'Laporan & KPI')
 @section('header')
     <div class="section-title">M12 · Dashboard & Reports</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Laporan Tata Kelola & KPI</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Laporan Tata Kelola & KPI</h1>
     <p class="text-sm text-slate-500">KPI keberhasilan (SRS §14), dokumen kedaluwarsa, review overdue, persetujuan tertunda, arsip tidak lengkap, aktivitas pengguna dan SLA pencarian.</p>
 @endsection
 @section('actions')

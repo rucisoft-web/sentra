@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Notifikasi')
-@section('header')<h1 class="text-2xl font-bold text-navy-700">Notifikasi</h1>@endsection
+@section('header')<h1 class="text-2xl font-bold text-marun-800">Notifikasi</h1>@endsection
 @section('actions')<form method="POST" action="{{ route('notifications.read') }}">@csrf<button class="btn btn-outline btn-sm">Tandai semua dibaca</button></form>@endsection
 @section('content')
 @php $colors = ['info'=>'border-l-navy-500','success'=>'border-l-emerald-600','warning'=>'border-l-amber-500','danger'=>'border-l-rose-600']; @endphp

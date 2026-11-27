@@ -2,7 +2,7 @@
 @section('title', 'Action Item')
 @section('header')
     <div class="section-title">M04 · Tindak lanjut keputusan</div>
-    <h1 class="text-2xl font-bold text-navy-700 mt-1">Action Item</h1>
+    <h1 class="text-2xl font-bold text-marun-800 mt-1">Action Item</h1>
     <p class="text-sm text-slate-500">Penyelesaian wajib disertai bukti tindak lanjut (dokumen arsip atau catatan).</p>
 @endsection
 @section('content')

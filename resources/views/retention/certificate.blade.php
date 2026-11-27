@@ -6,7 +6,7 @@
 <div class="card max-w-3xl mx-auto p-6 sm:p-10 border-t-8 border-t-navy-700" id="certificate">
     <div class="text-center border-b-2 border-gold-500 pb-4 mb-6">
         <div class="text-xs tracking-[0.3em] text-slate-500 uppercase">{{ $disposal->document->entity->name }}</div>
-        <h1 class="text-2xl font-bold text-navy-700 mt-2">BERITA ACARA PEMUSNAHAN ARSIP</h1>
+        <h1 class="text-2xl font-bold text-marun-800 mt-2">BERITA ACARA PEMUSNAHAN ARSIP</h1>
         <div class="doc-code text-sm mt-1">{{ $disposal->certificate_number }}</div>
     </div>
     <p class="text-sm leading-relaxed mb-4">Pada {{ $disposal->executed_at->translatedFormat('l, d F Y \p\u\k\u\l H:i') }} WIB telah dilaksanakan pemusnahan arsip dengan metode <b>{{ $disposal->method }}</b> berdasarkan jadwal retensi yang berlaku, setelah dipastikan tidak terdapat legal hold aktif dan memperoleh persetujuan ganda.</p>
